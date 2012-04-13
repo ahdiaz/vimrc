@@ -62,6 +62,9 @@ set pastetoggle=<F12>           " pastetoggle (sane indentation on pastes)
 " Toggle line numbers and fold column for easy copying:
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 
+" Remove the search highlight when hit enter
+nnoremap <silent> <return> :nohl<CR>
+
 " Toggle NERD_Tree plugin on/off
 map <F3> :NERDTreeToggle<CR>
 
