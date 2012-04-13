@@ -31,7 +31,7 @@ if has("autocmd")
   filetype plugin indent on
 
   " Remove trailing whitespaces and ^M chars
-  autocmd FileType c,cpp,java,php,js,python,twig,xml,yml autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
+  autocmd FileType c,cpp,java,php,js,python,rb,twig,xml,yml autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
 endif
 
 " The following are commented out as they cause vim to behave a lot
