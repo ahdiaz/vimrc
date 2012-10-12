@@ -158,3 +158,8 @@ nnoremap <silent> <F4> :BufExplorer<CR>
 nnoremap <silent> <F12> :bn<CR>
 nnoremap <silent> <S-F12> :bp<CR>
 
+" TaskList plugin options
+nnoremap <F6> :TaskList<CR>
+let g:tlWindowPosition = 1
+let g:tlTokenList = ['FIXME', 'TODO', 'IMPORTANT', 'XXX']
+
