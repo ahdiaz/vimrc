@@ -2,6 +2,9 @@
 " Not compatible with vi
 set nocompatible
 
+" Ignore these files
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+
 " Show (partial) command in status line.
 set showcmd
 
