@@ -126,7 +126,7 @@ endif
 
 " Set extra options when running in GUI mode
 if has("gui_running")
-    set guioptions-=lr
+    set guioptions-=lrT
     set guioptions+=R
     set guitablabel=%M\ %t
     colorscheme desert
