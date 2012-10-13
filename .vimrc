@@ -166,5 +166,5 @@ nnoremap <silent> <C-S-Tab> :bp!<CR>
 " TaskList plugin options
 nnoremap <F6> :TaskList<CR>
 let g:tlWindowPosition = 1
-let g:tlTokenList = ['FIXME', 'TODO', 'IMPORTANT', 'XXX']
+let g:tlTokenList = ['FIXME', 'TODO', 'NOTE', 'DEBUG', 'IMPORTANT', 'XXX']
 
