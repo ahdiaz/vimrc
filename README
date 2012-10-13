@@ -2,8 +2,8 @@
 Installing
 ----------
 
-$ ln -s /path/to/your/repo/.vim ~/.vim
-$ ln -s /path/to/your/repo/.vimrc ~/.vimrc
+$ ln -s /path/to/your/repo/vim ~/.vim
+$ ln -s /path/to/your/repo/vimrc ~/.vimrc
 
 Run these commands from the toplevel of the working tree.
 

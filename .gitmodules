@@ -1,18 +1,18 @@
-[submodule ".vim/bundle/pydoc"]
-	path = .vim/bundle/pydoc
+[submodule "vim/bundle/pydoc"]
+	path = vim/bundle/pydoc
 	url = https://github.com/fs111/pydoc.vim.git
-[submodule ".vim/bundle/pep8"]
-	path = .vim/bundle/pep8
+[submodule "vim/bundle/pep8"]
+	path = vim/bundle/pep8
 	url = https://github.com/vim-scripts/pep8.git
-[submodule ".vim/bundle/nerdtree"]
-	path = .vim/bundle/nerdtree
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
 	url = https://github.com/vim-scripts/The-NERD-tree.git
-[submodule ".vim/bundle/bufexplorer"]
-	path = .vim/bundle/bufexplorer
+[submodule "vim/bundle/bufexplorer"]
+	path = vim/bundle/bufexplorer
 	url = git://github.com/c9s/bufexplorer.git
-[submodule ".vim/bundle/ctrlp"]
-	path = .vim/bundle/ctrlp
+[submodule "vim/bundle/ctrlp"]
+	path = vim/bundle/ctrlp
 	url = git://github.com/kien/ctrlp.vim.git
-[submodule ".vim/bundle/tasklist"]
-	path = .vim/bundle/tasklist
+[submodule "vim/bundle/tasklist"]
+	path = vim/bundle/tasklist
 	url = git://github.com/vim-scripts/TaskList.vim.git
