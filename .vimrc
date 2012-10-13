@@ -114,9 +114,6 @@ filetype on
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-"let g:miniBufExplMapCTabSwitchBufs = 1
-"let g:miniBufExplMapWindowNavVim = 1
-
 " Uncomment the following to have Vim load indentation rules and plugins
 " according to the detected filetype.
 if has("autocmd")
