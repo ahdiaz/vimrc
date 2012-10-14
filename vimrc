@@ -45,7 +45,7 @@ nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 "set nowrap
 
 " Wrap lines and line breaks
-set wrap
+set nowrap
 set linebreak
 set textwidth=80
 
@@ -132,8 +132,9 @@ if has("gui_running")
     set guioptions-=R
     set guioptions-=T
     set guitablabel=%M\ %t
-    colorscheme desert
 endif
+
+colorscheme desert
 
 
 " Mappings for traversing tabs
