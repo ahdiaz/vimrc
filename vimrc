@@ -164,15 +164,9 @@ vnoremap > >gv
 
 
 " Buffers - explore/next/previous: Shift + ¡, ¡, '
-if has("macunix")
-    nnoremap <silent> ¿ :BufExplorer<CR>
-    nnoremap <silent> ' :bp!<CR>
-    nnoremap <silent> ¡ :bn!<CR>
-elseif has("unix")
-    nnoremap <silent> <F4> :BufExplorer<CR>
-    nnoremap <silent> <C-Tab> :bn!<CR>
-    nnoremap <silent> <C-S-Tab> :bp!<CR>
-endif
+nnoremap <silent> ¿ :BufExplorer<CR>
+nnoremap <silent> ' :bp!<CR>
+nnoremap <silent> ¡ :bn!<CR>
 
 
 " TaskList plugin options
