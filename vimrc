@@ -1,4 +1,11 @@
 
+" change the mapleader from \ to ,
+let mapleader=","
+
+" Quickly edit/reload the vimrc file
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
+
 " Not compatible with vi
 set nocompatible
 
@@ -154,11 +161,11 @@ vnoremap < <gv
 vnoremap > >gv
 
 
-" Buffers - explore/next/previous: Alt-F12, F12, Shift-F12.
+" Buffers - explore/next/previous: Shift + ¡, ¡, '
 if has("macunix")
-    nnoremap <silent> <S-F4> :BufExplorer<CR>
-    nnoremap <silent> ' :bn!<CR>
-    nnoremap <silent> ¡ :bp!<CR>
+    nnoremap <silent> ¿ :BufExplorer<CR>
+    nnoremap <silent> ' :bp!<CR>
+    nnoremap <silent> ¡ :bn!<CR>
 elseif has("unix")
     nnoremap <silent> <F4> :BufExplorer<CR>
     nnoremap <silent> <C-Tab> :bn!<CR>
