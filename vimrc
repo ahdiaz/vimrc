@@ -110,12 +110,6 @@ if has("syntax")
     "set background=dark
 endif
 
-" Uncomment the following to have Vim jump to the last position when
-" reopening a file
-if has("autocmd")
-    au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-endif
-
 filetype on
 
 call pathogen#runtime_append_all_bundles()
@@ -124,11 +118,19 @@ call pathogen#helptags()
 " Uncomment the following to have Vim load indentation rules and plugins
 " according to the detected filetype.
 if has("autocmd")
+
     filetype plugin on
     filetype indent on
 
     " Remove trailing whitespaces and ^M chars
     autocmd FileType c,cpp,java,php,js,python,rb,twig,xml,yml autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
+
+    " Uncomment the following to have Vim jump to the last position when
+    " reopening a file
+    au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+    " Change indentation if we edit Ruby code
+    au BufRead,BufNewFile *.rb setlocal shiftwidth=2 tabstop=2 softtabstop=2
 endif
 
 " Set extra options when running in GUI mode
