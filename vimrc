@@ -6,6 +6,9 @@ let mapleader=","
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
+" ... and the Git config
+nmap <silent> <leader>eg :e ~/.gitconfig<CR>
+
 " Not compatible with vi
 set nocompatible
 
