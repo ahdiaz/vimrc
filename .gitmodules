@@ -22,3 +22,6 @@
 [submodule "vim/bundle/syntastic"]
 	path = vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "vim/bundle/vim-localrc"]
+	path = vim/bundle/vim-localrc
+	url = https://github.com/thinca/vim-localrc.git
