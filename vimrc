@@ -145,8 +145,9 @@ if has("gui_running")
     set guioptions-=r
     set guioptions-=L
     set guioptions-=R
-    set guioptions-=T
+    set guioptions+=T
     set guitablabel=%M\ %t
+    set guifont=Monaco:h12
 endif
 
 "colorscheme desert
