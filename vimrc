@@ -68,14 +68,14 @@ set expandtab
 " Be smart when using tabs ;)
 set smarttab
 
-" Use indents of 4 spaces
-set shiftwidth=4
+" Use indents of 2 spaces
+set shiftwidth=2
 
-" An indentation every four columns
-set tabstop=4
+" An indentation every 2 columns
+set tabstop=2
 
 " Let backspace delete indent
-set softtabstop=4
+set softtabstop=2
 
 " Pastetoggle (sane indentation on pastes)
 set pastetoggle=<F12>
