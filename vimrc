@@ -56,8 +56,8 @@ nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 
 " Wrap lines and line breaks
 set nowrap
-set linebreak
-set textwidth=80
+"set linebreak
+"set textwidth=80
 
 " Tabs are spaces, not tabs
 set expandtab
@@ -146,7 +146,8 @@ if has("gui_running")
     set guitablabel=%M\ %t
 endif
 
-colorscheme desert
+"colorscheme desert
+colorscheme foobar
 
 
 " Mappings for traversing tabs
