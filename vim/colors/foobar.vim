@@ -19,13 +19,15 @@ if version > 580
     " complaining
     hi clear
     if exists("syntax_on")
-	syntax reset
+      syntax reset
     endif
 endif
+
 if v:version > 700
   set cursorline
   "set cursorcolumn
 endif
+
 let g:colors_name="foobar"
 
 hi Normal	guifg=White guibg=grey20
@@ -33,8 +35,8 @@ hi Normal	guifg=White guibg=grey20
 " highlight groups
 hi Cursor	guibg=khaki guifg=slategrey
 hi Cursor          cterm=NONE          ctermfg=NONE        guifg=#000000     ctermbg=NONE        guibg=#FFFFFF
-hi CursorColumn    cterm=NONE          ctermfg=NONE        guifg=NONE        ctermbg=DarkGray    guibg=#0F0F0F
-hi CursorLine      cterm=NONE          ctermfg=NONE        guifg=NONE        ctermbg=DarkGray    guibg=#0F0F0F
+hi CursorColumn    cterm=NONE          ctermfg=NONE        guifg=NONE        ctermbg=DarkGray    guibg=#555555
+hi CursorLine      cterm=NONE          ctermfg=NONE        guifg=NONE        ctermbg=DarkGray    guibg=#555555
 "hi CursorIM
 "hi Directory
 "hi DiffAdd
@@ -64,19 +66,6 @@ hi WarningMsg	guifg=salmon
 "hi Scrollbar
 "hi Tooltip
 
-" syntax highlighting groups
-hi Comment	guifg=SkyBlue
-hi Constant	guifg=#ffa0a0
-hi Identifier	guifg=palegreen
-hi Statement	guifg=khaki
-hi PreProc	guifg=indianred
-hi Type		guifg=darkkhaki
-hi Special	guifg=navajowhite
-"hi Underlined
-hi Ignore	guifg=grey40
-"hi Error
-hi Todo		guifg=orangered guibg=yellow2
-
 " color terminal definitions
 hi SpecialKey	ctermfg=darkgreen
 hi NonText	cterm=bold ctermfg=darkblue
@@ -86,8 +75,8 @@ hi IncSearch	cterm=NONE ctermfg=yellow ctermbg=green
 hi Search	cterm=NONE ctermfg=grey ctermbg=blue
 hi MoreMsg	ctermfg=darkgreen
 hi ModeMsg	cterm=NONE ctermfg=brown
-hi LineNr	ctermfg=3
-hi LineNr   ctermfg=DarkGray    guifg=#777777     ctermbg=DarkGray    guibg=#0F0F0F 
+"hi LineNr	ctermfg=3
+hi LineNr   ctermfg=DarkGray    guifg=#222222     ctermbg=DarkGray    guibg=#555555
 hi Question	ctermfg=green
 hi StatusLine	cterm=bold,reverse
 hi StatusLineNC cterm=reverse
@@ -116,16 +105,34 @@ hi Ignore	ctermfg=darkgrey
 hi Error	cterm=bold ctermfg=7 ctermbg=1
 
 "===========================
-hi Comment	ctermfg=DarkMagenta
-hi String   ctermfg=DarkGreen
-hi Character     ctermfg=LightRed
-hi Number     ctermfg=LightRed
-hi Float     ctermfg=LightRed
-hi Boolean     ctermfg=LightRed
-hi Identifier   ctermfg=DarkBlue
-hi Function   ctermfg=DarkBlue
-hi Statement    ctermfg=LightBlue
-hi Type    ctermfg=LightBlue
-hi cConstant    ctermfg=DarkYellow
+" syntax highlighting groups
+"hi Comment	guifg=SkyBlue
+"""hi Constant	guifg=#ffa0a0
+"""hi Identifier	guifg=palegreen
+"""hi Statement	guifg=khaki
+"""hi PreProc	guifg=indianred
+"""hi Type		guifg=darkkhaki
+"""hi Special	guifg=navajowhite
+""""hi Underlined
+"""hi Ignore	guifg=grey40
+""""hi Error
+"""hi Todo		guifg=orangered guibg=yellow2
+"~~~~~~~~~~~
+hi Comment	ctermfg=DarkMagenta guifg=SkyBlue
+hi String   ctermfg=DarkGreen guifg=LightGreen
+hi Character     ctermfg=LightRed guifg=indianred
+hi Number     ctermfg=LightRed guifg=indianred
+hi Float     ctermfg=LightRed guifg=indianred
+hi Boolean     ctermfg=LightRed guifg=indianred
+hi Identifier   ctermfg=DarkBlue guifg=indianred
+hi Function   ctermfg=DarkBlue guifg=DarkBlue
+hi Statement    ctermfg=LightBlue guifg=SkyBlue
+hi Type    ctermfg=LightBlue guifg=darkkhaki
+hi cConstant    ctermfg=DarkYellow guifg=indianred
+"hi Constant	guifg=#ffa0a0
+hi PreProc	guifg=indianred
+hi Special	guifg=navajowhite
+hi Todo		guifg=orangered guibg=yellow2
+hi Ignore	guifg=grey40
 
 "vim: sw=4

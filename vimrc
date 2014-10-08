@@ -55,10 +55,9 @@ set number
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 
 " Don't wrap long lines
-"set nowrap
+set nowrap
 
 " Wrap lines and line breaks
-set nowrap
 "set linebreak
 "set textwidth=80
 
@@ -103,7 +102,7 @@ set tm=500
 set encoding=utf8
 
 " Use Unix as the standard file type
-set ffs=unix,dos,mac
+set ffs=unix,mac,dos
 
 
 " Vim5 and later versions support syntax highlighting.
@@ -147,7 +146,11 @@ if has("gui_running")
     set guioptions-=R
     set guioptions+=T
     set guitablabel=%M\ %t
-    set guifont=Monaco:h12
+    if has("gui_mac")
+        set guifont=Monaco:h12
+    else
+        set guifont=Monospace\ 11
+    endif
 endif
 
 "colorscheme desert
